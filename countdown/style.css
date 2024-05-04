@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("17541.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center top; /* Center the background image vertically and horizontally */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right:0 ;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.4);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .countdown-container{
+        display: flex;
+    }
+    .big-text{
+        font-size: 4rem;
+    }
+    .title{
+        margin: 10px;
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        line-height: 5.5rem;
+    }
+    .title{
+        display: block;
+        font-size: 6rem;
+        letter-spacing: 2rem;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+    .countdown-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .countdown-container > div {
+        margin: 0 2rem;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 12px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        color: #fff;
+        min-width: 150px;
+    }
+    
+
+    @media (max-width: 992px) {
+        .countdown-container > div {
+            margin: 0 1rem;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .countdown-container {
+            flex-wrap: wrap;
+            justify-content: center; /* Center the elements horizontally */
+        }
+    
+        .countdown-container > div {
+            margin: 1rem; /* Adjust margin for better spacing */
+            max-width: 150px;
+        }
+    
+        .title {
+            font-size: 1.5rem;
+            line-height: 2rem; /* Reduce line height for better compactness */
+            margin: 10px 0;
+            text-align: center; /* Center the title */
+        }
+    
+        .title span {
+            font-size: 2rem;
+            letter-spacing: 0.5rem; /* Reduce letter spacing for better readability */
+        }
+    }
+    
